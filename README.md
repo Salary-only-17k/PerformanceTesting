@@ -1,2 +1,0 @@
-# PerformanceTesting
-rknn model PerformanceTesting
