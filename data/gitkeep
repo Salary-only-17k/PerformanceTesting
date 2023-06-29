@@ -1,0 +1,52 @@
+# 1、普通方式
+class Add:
+    def set_num(self, x, y):
+        self.x = x
+        self.y = y
+
+    def add_num(self):
+        sum = self.x+self.y
+        print(sum)
+
+
+a = Add()
+a.set_num(1, 2)
+a.add_num()
+
+print("---------------------------")
+# 计算两数相加
+# 1、使用__init__函数
+class Add:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def add_num(self):
+        sum = self.x+self.y
+        print(sum)
+
+
+a = Add(1, 2)
+a.add_num()
+print("---------------------------")
+#普通函数
+class A:
+    def fun(self, f):
+        self.f = f
+        print(self.f)
+
+
+a = A()
+a.fun("我是小可爱！")
+print("---------------------------")
+# __call__函数
+class A:
+    def __init__(self,a) -> None:
+        self.a = a
+    def __call__(self, f):
+        self.f = f
+        print(self.a+self.f)
+
+
+a = A("hello  ")
+a("我是小可爱！")
